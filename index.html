@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pokédex Moderna</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Pokédex</h1>
+    <div class="buscador">
+      <input type="text" id="busqueda" placeholder="Ingresa un Pokémon" />
+      <button onclick="obtenerPokemon()">Buscar</button>
+    </div>
+    <div id="tarjeta-pokemon" class="tarjeta oculto">
+      <img id="imagen" src="" alt="Imagen del Pokémon" />
+      <h2 id="nombre"></h2>
+      <p id="tipo"></p>
+      <ul id="detalles"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
